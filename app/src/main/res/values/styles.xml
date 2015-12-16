@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textColor">@color/default_text_color</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:actionBarStyle"   tools:ignore="NewApi">@style/ActionBarStyle</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background"  tools:ignore="NewApi">@color/action_bar_color</item>
+        <item name="background">@color/action_bar_color</item>
+    </style>
+
+    <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:actionBarStyle"   tools:ignore="NewApi">@style/ActionBarStyle</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+
+    <style name="font_awesome_button" parent="font_awesome_image">
+        <item name="android:textSize">23dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="text_bold" >
+        <item name="fontType">@string/bold_font</item>
+    </style>
+
+    <style name="font_awesome_image">
+        <item name="fontType">fontawesome-webfont.ttf</item>
+    </style>
+
+    <style name="horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:background">@color/default_text_color</item>
+    </style>
+
+    <style name="input_value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="input_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.emmbi.mobile.example.fragments.MainTabFragment">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_text_color"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:layout_gravity="right|center_vertical">
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                style="@style/font_awesome_button"
+                android:text="@string/fa_flag"
+                android:textColor="#fff"
+                android:paddingTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/default_text_color"
+                android:text="3"
+                style="@style/text_bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/notification_background"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <com.emmbi.mobile.example.views.custom.CustomFontTextView
+            android:id="@+id/settings_btn"
+            style="@style/font_awesome_button"
+            android:text="@string/fa_settings"
+            android:textColor="#fff"
+            android:paddingRight="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#434343"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/logo_color"
+        app:tabTextAppearance="@style/TextAppearance.Design.Tab"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabMode="scrollable" />
+
+    <FrameLayout
+        android:id="@+id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1" />-->
+
+</LinearLayout>

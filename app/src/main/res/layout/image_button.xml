@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/button_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.kickserv.kickserv.views.custom.CustomFontTextView
+        android:id="@+id/button_label"
+        android:paddingTop="6dp"
+        android:paddingBottom="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_icon"/>
+
+</merge>

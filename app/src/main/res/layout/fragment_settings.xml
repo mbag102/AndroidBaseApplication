@@ -1,0 +1,276 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/gray_text_color">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_text_color"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="@string/title_settings"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginLeft="@dimen/title_padding_left"
+                android:layout_toRightOf="@id/back_button"
+                android:layout_centerVertical="true"/>
+
+        </LinearLayout>
+
+        <com.emmbi.mobile.example.views.custom.CustomFontTextView
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/save_str"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_gravity="right"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray_text_color"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/base_fragment_background">
+
+            <RelativeLayout
+                android:id="@+id/settings_account_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/header_bar_gray" >
+
+                <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                    android:paddingLeft="14dp"
+                    android:text="@string/settings_account_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/profile_picture_placeholder"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitCenter" />
+
+                <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                    android:text="@string/edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_toLeftOf="@id/profile_picture" />
+
+            </RelativeLayout>
+
+            <com.emmbi.mobile.example.views.custom.CustomFontEditText
+                style="@style/input_value"
+                android:id="@+id/first_name" />
+
+            <View
+                style="@style/horizontal_line" />
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                style="@style/input_label"
+                android:text="@string/first_name"/>
+
+            <com.emmbi.mobile.example.views.custom.CustomFontEditText
+                style="@style/input_value"
+                android:id="@+id/last_name" />
+
+            <View
+                style="@style/horizontal_line" />
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                style="@style/input_label"
+                android:text="@string/last_name"/>
+
+            <com.emmbi.mobile.example.views.custom.CustomFontEditText
+                style="@style/input_value"
+                android:id="@+id/email_address" />
+
+            <View
+                style="@style/horizontal_line" />
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                style="@style/input_label"
+                android:text="@string/email_address"/>
+
+            <com.emmbi.mobile.example.views.custom.CustomFontEditText
+                style="@style/input_value"
+                android:id="@+id/phone_number" />
+
+            <View
+                style="@style/horizontal_line" />
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                style="@style/input_label"
+                android:text="@string/phone_optional"/>
+
+            <com.emmbi.mobile.example.views.custom.CustomFontEditText
+                style="@style/input_value"
+                android:id="@+id/date_of_birth" />
+
+            <View
+                style="@style/horizontal_line" />
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                style="@style/input_label"
+                android:text="@string/date_of_birth"/>
+
+            <com.emmbi.mobile.example.views.custom.CustomFontEditText
+                style="@style/input_value"
+                android:id="@+id/street_address" />
+
+            <View
+                style="@style/horizontal_line" />
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                style="@style/input_label"
+                android:text="@string/address"/>
+
+            <com.emmbi.mobile.example.views.custom.CustomFontEditText
+                style="@style/input_value"
+                android:id="@+id/city" />
+
+            <View
+                style="@style/horizontal_line" />
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                style="@style/input_label"
+                android:text="@string/city"/>
+
+            <com.emmbi.mobile.example.views.custom.CustomFontEditText
+                style="@style/input_value"
+                android:id="@+id/state" />
+
+            <View
+                style="@style/horizontal_line" />
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                style="@style/input_label"
+                android:text="@string/state"/>
+
+            <com.emmbi.mobile.example.views.custom.CustomFontEditText
+                style="@style/input_value"
+                android:id="@+id/zip_code" />
+
+            <View
+                style="@style/horizontal_line" />
+
+            <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                style="@style/input_label"
+                android:text="@string/zip_code"
+                android:layout_marginBottom="8dp"/>
+
+            <RelativeLayout
+                android:id="@+id/settings_about_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/header_bar_gray" >
+
+                <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                    android:paddingLeft="14dp"
+                    android:text="@string/settings_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <com.linearlistview.LinearListView
+                android:id="@+id/settings_action_list"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:showDividers="middle"
+                android:dividerPadding="10dp"
+                android:divider="@drawable/horizontal_line" />
+
+            <RelativeLayout
+                android:id="@+id/settings_contributions_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/header_bar_gray" >
+
+                <com.emmbi.mobile.example.views.custom.CustomFontTextView
+                    android:paddingLeft="14dp"
+                    android:text="@string/settings_contributions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <com.linearlistview.LinearListView
+                android:id="@+id/settings_contributions_list"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:showDividers="middle|end"
+                android:dividerPadding="10dp"
+                android:divider="@drawable/horizontal_line"/>
+
+            <com.emmbi.mobile.example.views.custom.CustomFontButton
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="LOGOUT"
+                android:background="@color/header_bar_gray"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

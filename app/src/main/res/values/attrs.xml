@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="fontType" format="string"/>
+    <attr name="button_icon" format="reference" />
+    <attr name="button_label" format="string"/>
+
+    <declare-styleable name="CustomFontButton">
+        <attr name="fontType" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontCheckboxView">
+        <attr name="fontType" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontEditText">
+        <attr name="fontType" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontTextView">
+        <attr name="fontType" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageButton">
+        <attr name="button_icon" />
+        <attr name="button_label" />
+    </declare-styleable>
+</resources>

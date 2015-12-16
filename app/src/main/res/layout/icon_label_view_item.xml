@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="0px"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <com.emmbi.mobile.example.views.custom.CustomFontTextView
+        android:id="@+id/icon_label_icon"
+        style="@style/font_awesome_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="27dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.emmbi.mobile.example.views.custom.CustomFontTextView
+        android:id="@+id/icon_label_label"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
+        style="@style/text_bold"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minLines="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/icon_label_icon"/>
+
+</RelativeLayout>

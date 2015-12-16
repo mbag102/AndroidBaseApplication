@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_paper_plane">&#xf1d8;</string>
+    <string name="fa_dollar">&#xf155;</string>
+    <string name="fa_phone">&#xf095;</string>
+    <string name="fa_text">&#xf086;</string>
+    <string name="fa_question">&#xf059;</string>
+    <string name="fa_history">&#xf1da;</string>
+    <string name="fa_plus">&#xf067;</string>
+    <string name="fa_pencil">&#xf040;</string>
+    <string name="fa_wrench">&#xf0ad;</string>
+    <string name="fa_plane">&#xf072;</string>
+    <string name="fa_estimate">&#xf0ea;</string>
+    <string name="fa_thumb_tack">&#xf08d;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_check">&#xf00c;</string>
+    <string name="fa_close">&#xf00d;</string>
+    <string name="fa_start">&#xf04b;</string>
+    <string name="fa_hold">&#xf256;</string>
+    <string name="fa_stop">&#xf04d;</string>
+    <string name="fa_caret_down">&#xf0d7;</string>
+    <string name="fa_caret_up">&#xf0d8;</string>
+    <string name="fa_sort_asc">&#xf0de;</string>
+    <string name="fa_sort_desc">&#xf0dd;</string>
+    <string name="fa_invoice">&#xf15c;</string>
+    <string name="fa_thumbsup">&#xf164;</string>
+    <string name="fa_restart">&#xf0e2;</string>
+    <string name="fa_settings">&#xf013;</string>
+    <string name="fa_flag">&#xf024;</string>
+</resources>

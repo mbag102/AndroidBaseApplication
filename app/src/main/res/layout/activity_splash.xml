@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:src="@mipmap/surve_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <com.emmbi.mobile.example.views.custom.CustomFontTextView
+        android:id="@+id/logo_text"
+        android:layout_centerInParent="true"
+        android:textColor="@color/logo_color"
+        app:fontType="Lantinghei-TC-Extralight-stub.ttf"
+        android:paddingTop="100dp"
+        android:text="@string/surve_logo_text"
+        android:textSize="62dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/surve_logo"
+        android:src="@mipmap/surve_logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-80dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/logo_text"
+        android:scaleType="fitCenter" />
+
+
+
+</RelativeLayout>

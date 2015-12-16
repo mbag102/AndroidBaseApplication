@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?actionButtonStyle"
+    android:id="@+id/actionbar_done"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <com.emmbi.mobile.example.views.custom.CustomFontTextView
+        android:id="@+id/done_button_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        app:fontType="fontawesome-webfont.ttf"
+        android:textSize="23dp"
+        android:textColor="#ffffff"
+        style="?actionBarTabTextStyle"
+        android:gravity="center_vertical"
+        android:text="@string/fa_check"/>
+
+    <com.emmbi.mobile.example.views.custom.CustomFontTextView
+        android:id="@+id/done_button_text"
+        style="?actionBarTabTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/default_text_size"
+        android:textColor="#ffffff"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray_text_color" type="color">#979797</color>
+    <color name="default_text_color" type="color">#1f1f1f</color>
+    <color name="logo_color" type="color">#24de10</color>
+    <color name="white">#ffffff</color>
+    <color name="action_bar_color">#1f1f1f</color>
+    <color name="base_fragment_background">#EFEFEF</color>
+    <color name="header_bar_gray">#4A4A4A</color>
+</resources>
